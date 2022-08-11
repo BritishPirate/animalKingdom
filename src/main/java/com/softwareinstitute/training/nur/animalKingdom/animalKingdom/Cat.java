@@ -7,6 +7,7 @@ public class Cat extends Mammal {
     public Cat(){
         super();
         killCount = 0;
+        name = "";
     }
 
     public String getName(){
@@ -17,6 +18,13 @@ public class Cat extends Mammal {
         this.name = name;
     }
 
+    public void name(String name, boolean owner){
+        this.name = (owner ? name : this.name);
+    }
+
+    public boolean call(String name){
+        return (this.name.equals(name));
+    }
 
     public void eat(){
         System.out.println("Eating, core.code.Cat");
