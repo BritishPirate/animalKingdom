@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 public class AnimalTest {
 
-
+ //
     @Test
     public void test_Animal_Die(){
         Cat cat = new Cat();
