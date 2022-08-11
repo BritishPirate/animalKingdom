@@ -1,5 +1,7 @@
 package com.softwareinstitute.training.nur.animalKingdom.animalKingdom;
 
+import com.google.gson.Gson;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +26,8 @@ public class AnimalList {
     }
     @Override
     public String toString(){
-        return "";
+        String ret = "";
+        ret = new Gson().toJson(AnimalList);
+        return ret;
     }
 }
